@@ -88,6 +88,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="HalResourceMixedContentTest.cs" />
     <Compile Include="HalResourceWithPeopleTest.cs" />
     <Compile Include="HalResourceTest.cs" />
