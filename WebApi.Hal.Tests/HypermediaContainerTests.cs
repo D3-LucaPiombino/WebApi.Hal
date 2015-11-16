@@ -9,6 +9,7 @@ using Xunit;
 
 namespace WebApi.Hal.Tests
 {
+    [Collection("Hal")]
     public class HypermediaContainerTests
     {
         readonly ProductRepresentation representation = new ProductRepresentation();

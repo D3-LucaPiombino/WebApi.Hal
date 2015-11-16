@@ -8,6 +8,7 @@ using Xunit;
 
 namespace WebApi.Hal.Tests
 {
+    [Collection("Hal")]
     public class ResolvingHalResourceTest
     {
         readonly ProductRepresentation representation;

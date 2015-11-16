@@ -7,6 +7,7 @@ using Xunit;
 
 namespace WebApi.Hal.Tests
 {
+    [Collection("Hal")]
     public class HalResourceWithPeopleTest
     {
         readonly OrganisationWithPeopleRepresentation resource;
