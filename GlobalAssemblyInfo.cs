@@ -21,9 +21,16 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.5.2.0")]
-[assembly: AssemblyInformationalVersion("2.5.2-beta00001")]
+[assembly: AssemblyVersion(SemVer.Base)]
+[assembly: AssemblyInformationalVersion(SemVer.Semantic)]
 
 #pragma warning disable CS7035 // The specified version string does not conform to the recommended format - major.minor.build.revision
-[assembly: AssemblyFileVersion("2.5.2-beta00001")]
+[assembly: AssemblyFileVersion(SemVer.Semantic)]
+
+static class SemVer
+{
+    public const string Base = "2.5.2";
+    public const string Semantic = Base + "-beta00002";
+}
+
 
